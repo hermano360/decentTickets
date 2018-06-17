@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/three.js/build/ar.min.js"></script>
+
+    <!-- This exposes the library as a global variable: ethers -->
+    <!--
+    <script src="https://cdn.ethers.io/scripts/ethers-v3.min.js"
+            charset="utf-8"
+            type="text/javascript">
+    </script>
+    -->
+
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <script src="assets/js/cool-stuff.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <title>React App</title>
+  </head>
+  <body class="is-loading">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <section id="main">
+        <header>
+            <span class="avatar" id="scanner" onclick="activateAR()">
+                <img src="images/avatar.jpg" alt="" />
+                <figure>
+                    <img src="images/scan.png" id="scan">
+                </figure>
+            </span>
+            <h1>Decentralized Ticket Authenticity Master</h1>
+            <p>Team members: Hermano, Karen, John, Luigi</p>
+        </header>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>&copy; lol</li>
+        </ul>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+<script>
+if ('addEventListener' in window) {
+window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+}
+</script>
+  </body>
+</html>
